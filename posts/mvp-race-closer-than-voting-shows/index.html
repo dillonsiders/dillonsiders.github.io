@@ -188,8 +188,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>2023 was an interesting year for NFL offenses and QBs. After years of consistent improvement in QB play this year was different. This down year at the QB position contributed to one of the weirdest MVP races in recent memory.</p>
 <p>Baltimore Ravens quarterback Lamar Jackson ended up winning the 2023 NFL MVP award in a landslide securing 49 of the 50 first-place votes. Jackson was critical to the Ravens’ success this year leading them to a 13-3 record, the best in the NFL, but he lacked some of the other criteria that past MVP had.</p>
 <p>While you cannot question Jackson’s impact on the Ravens you can question if he was the “most valuable” player in the NFL. Multiple other QBs put up similar or superior individual stats but fell short in the team success category.</p>
-<p>So, how do you evaluate which player brings more value than another? That’s the hard part. Dak Prescott, Josh Allen, and Brock Purdy all put up better numbers but had fewer wins, so were they actually more valuable?</p>
-<p>A good starting point is comparing individual players’ stats to one another while taking team situation/roster construction into account. When doing this we see other QBs like Dak Prescott, Josh Allen, and Brock Purdy start to make better cases for themselves.</p>
+<p>So, how do you evaluate which player brings more value than another? That’s the hard part.</p>
+<p>A starting point is evaluating which plays are more valuable than others. Since the revolution of the passing game, passing plays have become more efficient and effective than rushing plays.</p>
+<p>This can be displayed by the average expected points added per play(EPA/play) for passing and rushing plays. On the season only three teams had a positive EPA/play on rushing plays, the 49ers, Ravens, and Bills. This means on average only the 49ers, Ravens, and Bills increase their odds of scoring when they run the ball.</p>
+<p>Now that we know what play type brings more value we can dive into the numbers and we’ll see which MVP candidates brought the most value.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -326,23 +328,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </details>
 <div class="cell-output-display">
 <div>
-<div id="fanlguarhl" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#fanlguarhl table {
+<div id="ugfuplmphe" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ugfuplmphe table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#fanlguarhl thead, #fanlguarhl tbody, #fanlguarhl tfoot, #fanlguarhl tr, #fanlguarhl td, #fanlguarhl th {
+#ugfuplmphe thead, #ugfuplmphe tbody, #ugfuplmphe tfoot, #ugfuplmphe tr, #ugfuplmphe td, #ugfuplmphe th {
   border-style: none;
 }
 
-#fanlguarhl p {
+#ugfuplmphe p {
   margin: 0;
   padding: 0;
 }
 
-#fanlguarhl .gt_table {
+#ugfuplmphe .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -368,12 +370,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#fanlguarhl .gt_caption {
+#ugfuplmphe .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#fanlguarhl .gt_title {
+#ugfuplmphe .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -385,7 +387,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#fanlguarhl .gt_subtitle {
+#ugfuplmphe .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -397,7 +399,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#fanlguarhl .gt_heading {
+#ugfuplmphe .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -409,13 +411,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#fanlguarhl .gt_bottom_border {
+#ugfuplmphe .gt_bottom_border {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#fanlguarhl .gt_col_headings {
+#ugfuplmphe .gt_col_headings {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -430,7 +432,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#fanlguarhl .gt_col_heading {
+#ugfuplmphe .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -450,7 +452,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#fanlguarhl .gt_column_spanner_outer {
+#ugfuplmphe .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -462,15 +464,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#fanlguarhl .gt_column_spanner_outer:first-child {
+#ugfuplmphe .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#fanlguarhl .gt_column_spanner_outer:last-child {
+#ugfuplmphe .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#fanlguarhl .gt_column_spanner {
+#ugfuplmphe .gt_column_spanner {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -482,11 +484,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#fanlguarhl .gt_spanner_row {
+#ugfuplmphe .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#fanlguarhl .gt_group_heading {
+#ugfuplmphe .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -512,7 +514,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#fanlguarhl .gt_empty_group_heading {
+#ugfuplmphe .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -527,15 +529,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#fanlguarhl .gt_from_md > :first-child {
+#ugfuplmphe .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#fanlguarhl .gt_from_md > :last-child {
+#ugfuplmphe .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#fanlguarhl .gt_row {
+#ugfuplmphe .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -554,7 +556,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#fanlguarhl .gt_stub {
+#ugfuplmphe .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -567,7 +569,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#fanlguarhl .gt_stub_row_group {
+#ugfuplmphe .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -581,15 +583,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#fanlguarhl .gt_row_group_first td {
+#ugfuplmphe .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#fanlguarhl .gt_row_group_first th {
+#ugfuplmphe .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#fanlguarhl .gt_summary_row {
+#ugfuplmphe .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -599,16 +601,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#fanlguarhl .gt_first_summary_row {
+#ugfuplmphe .gt_first_summary_row {
   border-top-style: none;
   border-top-color: #D3D3D3;
 }
 
-#fanlguarhl .gt_first_summary_row.thick {
+#ugfuplmphe .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#fanlguarhl .gt_last_summary_row {
+#ugfuplmphe .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -618,7 +620,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#fanlguarhl .gt_grand_summary_row {
+#ugfuplmphe .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -628,7 +630,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#fanlguarhl .gt_first_grand_summary_row {
+#ugfuplmphe .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -638,7 +640,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#fanlguarhl .gt_last_grand_summary_row_top {
+#ugfuplmphe .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -648,11 +650,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#fanlguarhl .gt_striped {
+#ugfuplmphe .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#fanlguarhl .gt_table_body {
+#ugfuplmphe .gt_table_body {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -661,7 +663,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#fanlguarhl .gt_footnotes {
+#ugfuplmphe .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -675,7 +677,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#fanlguarhl .gt_footnote {
+#ugfuplmphe .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -684,7 +686,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#fanlguarhl .gt_sourcenotes {
+#ugfuplmphe .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -698,7 +700,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#fanlguarhl .gt_sourcenote {
+#ugfuplmphe .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -706,63 +708,63 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#fanlguarhl .gt_left {
+#ugfuplmphe .gt_left {
   text-align: left;
 }
 
-#fanlguarhl .gt_center {
+#ugfuplmphe .gt_center {
   text-align: center;
 }
 
-#fanlguarhl .gt_right {
+#ugfuplmphe .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#fanlguarhl .gt_font_normal {
+#ugfuplmphe .gt_font_normal {
   font-weight: normal;
 }
 
-#fanlguarhl .gt_font_bold {
+#ugfuplmphe .gt_font_bold {
   font-weight: bold;
 }
 
-#fanlguarhl .gt_font_italic {
+#ugfuplmphe .gt_font_italic {
   font-style: italic;
 }
 
-#fanlguarhl .gt_super {
+#ugfuplmphe .gt_super {
   font-size: 65%;
 }
 
-#fanlguarhl .gt_footnote_marks {
+#ugfuplmphe .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#fanlguarhl .gt_asterisk {
+#ugfuplmphe .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#fanlguarhl .gt_indent_1 {
+#ugfuplmphe .gt_indent_1 {
   text-indent: 5px;
 }
 
-#fanlguarhl .gt_indent_2 {
+#ugfuplmphe .gt_indent_2 {
   text-indent: 10px;
 }
 
-#fanlguarhl .gt_indent_3 {
+#ugfuplmphe .gt_indent_3 {
   text-indent: 15px;
 }
 
-#fanlguarhl .gt_indent_4 {
+#ugfuplmphe .gt_indent_4 {
   text-indent: 20px;
 }
 
-#fanlguarhl .gt_indent_5 {
+#ugfuplmphe .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -844,9 +846,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>When comparing basic throwing stats we see Dak Prescott jumps out leading six of the eight stats. These stats also show how much of an outlier Jackson’s passing was for an MVP.</p>
-<p>Obviously when comparing these QBs stats Lamar Jackson’s outlier athleticism must be considered. No other quarterback in the NFL brings the same rushing threat Jackson does. While Josh Allen is a great runner he still doesn’t compare to Jackson’s speed and agility.</p>
-<p>When looking at how good of a passer a QB is base stats are not the only thing you want to look at because they do not tell the entire story. For this, we have other metrics like completed air yards and yards after catch. These help show how much assistance a quarterback gets in gaining their yards.</p>
+<p>When comparing basic throwing stats we see some things jump out. Dak Prescott dominated basic throwing stats. Not only did he lead in total passing volume(completions and attempts) but he posted some of the best efficiency numbers(completion%, touchdown%, and interception%)</p>
+<p>On the other hand, Jackson and Purdy were both outside the top 15 in total volume. Can someone be the most valuable player if they rank in the lower half for the most valuable type of play? For QBs like Jackson who provide elite scrambling ability, yes. For QBs like Purdy who are primarily pocket passers, no.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -945,23 +946,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </details>
 <div class="cell-output-display">
 <div>
-<div id="yosdcwzrae" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#yosdcwzrae table {
+<div id="ogyymkorve" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ogyymkorve table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#yosdcwzrae thead, #yosdcwzrae tbody, #yosdcwzrae tfoot, #yosdcwzrae tr, #yosdcwzrae td, #yosdcwzrae th {
+#ogyymkorve thead, #ogyymkorve tbody, #ogyymkorve tfoot, #ogyymkorve tr, #ogyymkorve td, #ogyymkorve th {
   border-style: none;
 }
 
-#yosdcwzrae p {
+#ogyymkorve p {
   margin: 0;
   padding: 0;
 }
 
-#yosdcwzrae .gt_table {
+#ogyymkorve .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -987,12 +988,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#yosdcwzrae .gt_caption {
+#ogyymkorve .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#yosdcwzrae .gt_title {
+#ogyymkorve .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1004,7 +1005,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#yosdcwzrae .gt_subtitle {
+#ogyymkorve .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1016,7 +1017,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#yosdcwzrae .gt_heading {
+#ogyymkorve .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1028,13 +1029,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#yosdcwzrae .gt_bottom_border {
+#ogyymkorve .gt_bottom_border {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#yosdcwzrae .gt_col_headings {
+#ogyymkorve .gt_col_headings {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1049,7 +1050,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#yosdcwzrae .gt_col_heading {
+#ogyymkorve .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1069,7 +1070,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#yosdcwzrae .gt_column_spanner_outer {
+#ogyymkorve .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1081,15 +1082,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#yosdcwzrae .gt_column_spanner_outer:first-child {
+#ogyymkorve .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#yosdcwzrae .gt_column_spanner_outer:last-child {
+#ogyymkorve .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#yosdcwzrae .gt_column_spanner {
+#ogyymkorve .gt_column_spanner {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1101,11 +1102,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#yosdcwzrae .gt_spanner_row {
+#ogyymkorve .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#yosdcwzrae .gt_group_heading {
+#ogyymkorve .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1131,7 +1132,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#yosdcwzrae .gt_empty_group_heading {
+#ogyymkorve .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1146,15 +1147,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#yosdcwzrae .gt_from_md > :first-child {
+#ogyymkorve .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#yosdcwzrae .gt_from_md > :last-child {
+#ogyymkorve .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#yosdcwzrae .gt_row {
+#ogyymkorve .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1173,7 +1174,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#yosdcwzrae .gt_stub {
+#ogyymkorve .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1186,7 +1187,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#yosdcwzrae .gt_stub_row_group {
+#ogyymkorve .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1200,15 +1201,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#yosdcwzrae .gt_row_group_first td {
+#ogyymkorve .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#yosdcwzrae .gt_row_group_first th {
+#ogyymkorve .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#yosdcwzrae .gt_summary_row {
+#ogyymkorve .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1218,16 +1219,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#yosdcwzrae .gt_first_summary_row {
+#ogyymkorve .gt_first_summary_row {
   border-top-style: none;
   border-top-color: #D3D3D3;
 }
 
-#yosdcwzrae .gt_first_summary_row.thick {
+#ogyymkorve .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#yosdcwzrae .gt_last_summary_row {
+#ogyymkorve .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1237,7 +1238,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#yosdcwzrae .gt_grand_summary_row {
+#ogyymkorve .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1247,7 +1248,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#yosdcwzrae .gt_first_grand_summary_row {
+#ogyymkorve .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1257,7 +1258,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#yosdcwzrae .gt_last_grand_summary_row_top {
+#ogyymkorve .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1267,11 +1268,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#yosdcwzrae .gt_striped {
+#ogyymkorve .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#yosdcwzrae .gt_table_body {
+#ogyymkorve .gt_table_body {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1280,7 +1281,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#yosdcwzrae .gt_footnotes {
+#ogyymkorve .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1294,7 +1295,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#yosdcwzrae .gt_footnote {
+#ogyymkorve .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1303,7 +1304,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#yosdcwzrae .gt_sourcenotes {
+#ogyymkorve .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1317,7 +1318,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#yosdcwzrae .gt_sourcenote {
+#ogyymkorve .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1325,63 +1326,63 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#yosdcwzrae .gt_left {
+#ogyymkorve .gt_left {
   text-align: left;
 }
 
-#yosdcwzrae .gt_center {
+#ogyymkorve .gt_center {
   text-align: center;
 }
 
-#yosdcwzrae .gt_right {
+#ogyymkorve .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#yosdcwzrae .gt_font_normal {
+#ogyymkorve .gt_font_normal {
   font-weight: normal;
 }
 
-#yosdcwzrae .gt_font_bold {
+#ogyymkorve .gt_font_bold {
   font-weight: bold;
 }
 
-#yosdcwzrae .gt_font_italic {
+#ogyymkorve .gt_font_italic {
   font-style: italic;
 }
 
-#yosdcwzrae .gt_super {
+#ogyymkorve .gt_super {
   font-size: 65%;
 }
 
-#yosdcwzrae .gt_footnote_marks {
+#ogyymkorve .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#yosdcwzrae .gt_asterisk {
+#ogyymkorve .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#yosdcwzrae .gt_indent_1 {
+#ogyymkorve .gt_indent_1 {
   text-indent: 5px;
 }
 
-#yosdcwzrae .gt_indent_2 {
+#ogyymkorve .gt_indent_2 {
   text-indent: 10px;
 }
 
-#yosdcwzrae .gt_indent_3 {
+#ogyymkorve .gt_indent_3 {
   text-indent: 15px;
 }
 
-#yosdcwzrae .gt_indent_4 {
+#ogyymkorve .gt_indent_4 {
   text-indent: 20px;
 }
 
-#yosdcwzrae .gt_indent_5 {
+#ogyymkorve .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -1448,9 +1449,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>When looking at how good of a passer a QB is base stats are not the only thing you want to look at because they do not tell the entire story. For this, we have other metrics like completed air yards(CAY) and yards after catch(YAC). These help show how much assistance a quarterback gets in gaining their yards.</p>
 <p>Here we see Dak Prescott make his case for best QB through the air in 2023 leading candidates in CAY while getting the least help per reception through YAC. On the flip side, Brock Purdy is the only candidate with 2000 plus YAC on the year.</p>
+<p>These differences can be caused by lots of things, but the most common ones are offensive scheming and skill position talent. Take the 49ers for example. Their offense is designed around getting their skills players room to generate YAC. Pair that with elite YAC weapons like Christian McCaffrey, Deebo Samuel, Brandon Aiyuk, and George Kittle you have the recipe for easy yardage. The Ravens are somewhat similar to the 49ers on offense just without all the elite talent around the QB.</p>
+<p>Prescott and Allen aren’t as fortunate. Whether it be offensive scheming or subpar weapons these QBs cannot rely on YAC like the other two.</p>
 <p>The most important part of playing QB has to be accuracy. How can an offense function at full force with a signal caller who constantly misses open receivers or throws it to the defense?</p>
-<p>Accuracy is not just a player’s completion percentage. There a plenty of outside factors that can worsen a QBs completion percentage that are uncontrollable like drops, throwaways and spikes. Stats like bad throw percentage(BT%) and on-target throw percentage(OnTgt%) can show you true accuracy taking uncontrolables into account.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -1566,23 +1569,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </details>
 <div class="cell-output-display">
 <div>
-<div id="jtfvowuezo" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#jtfvowuezo table {
+<div id="kalgruyugx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#kalgruyugx table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#jtfvowuezo thead, #jtfvowuezo tbody, #jtfvowuezo tfoot, #jtfvowuezo tr, #jtfvowuezo td, #jtfvowuezo th {
+#kalgruyugx thead, #kalgruyugx tbody, #kalgruyugx tfoot, #kalgruyugx tr, #kalgruyugx td, #kalgruyugx th {
   border-style: none;
 }
 
-#jtfvowuezo p {
+#kalgruyugx p {
   margin: 0;
   padding: 0;
 }
 
-#jtfvowuezo .gt_table {
+#kalgruyugx .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1608,12 +1611,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#jtfvowuezo .gt_caption {
+#kalgruyugx .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#jtfvowuezo .gt_title {
+#kalgruyugx .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1625,7 +1628,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#jtfvowuezo .gt_subtitle {
+#kalgruyugx .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1637,7 +1640,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#jtfvowuezo .gt_heading {
+#kalgruyugx .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1649,13 +1652,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#jtfvowuezo .gt_bottom_border {
+#kalgruyugx .gt_bottom_border {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#jtfvowuezo .gt_col_headings {
+#kalgruyugx .gt_col_headings {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1670,7 +1673,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#jtfvowuezo .gt_col_heading {
+#kalgruyugx .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1690,7 +1693,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#jtfvowuezo .gt_column_spanner_outer {
+#kalgruyugx .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1702,15 +1705,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#jtfvowuezo .gt_column_spanner_outer:first-child {
+#kalgruyugx .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#jtfvowuezo .gt_column_spanner_outer:last-child {
+#kalgruyugx .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#jtfvowuezo .gt_column_spanner {
+#kalgruyugx .gt_column_spanner {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1722,11 +1725,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#jtfvowuezo .gt_spanner_row {
+#kalgruyugx .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#jtfvowuezo .gt_group_heading {
+#kalgruyugx .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1752,7 +1755,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#jtfvowuezo .gt_empty_group_heading {
+#kalgruyugx .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1767,15 +1770,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#jtfvowuezo .gt_from_md > :first-child {
+#kalgruyugx .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#jtfvowuezo .gt_from_md > :last-child {
+#kalgruyugx .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#jtfvowuezo .gt_row {
+#kalgruyugx .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1794,7 +1797,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#jtfvowuezo .gt_stub {
+#kalgruyugx .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1807,7 +1810,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#jtfvowuezo .gt_stub_row_group {
+#kalgruyugx .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1821,15 +1824,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#jtfvowuezo .gt_row_group_first td {
+#kalgruyugx .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#jtfvowuezo .gt_row_group_first th {
+#kalgruyugx .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#jtfvowuezo .gt_summary_row {
+#kalgruyugx .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1839,16 +1842,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#jtfvowuezo .gt_first_summary_row {
+#kalgruyugx .gt_first_summary_row {
   border-top-style: none;
   border-top-color: #D3D3D3;
 }
 
-#jtfvowuezo .gt_first_summary_row.thick {
+#kalgruyugx .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#jtfvowuezo .gt_last_summary_row {
+#kalgruyugx .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1858,7 +1861,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#jtfvowuezo .gt_grand_summary_row {
+#kalgruyugx .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1868,7 +1871,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#jtfvowuezo .gt_first_grand_summary_row {
+#kalgruyugx .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1878,7 +1881,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#jtfvowuezo .gt_last_grand_summary_row_top {
+#kalgruyugx .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1888,11 +1891,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#jtfvowuezo .gt_striped {
+#kalgruyugx .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#jtfvowuezo .gt_table_body {
+#kalgruyugx .gt_table_body {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1901,7 +1904,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#jtfvowuezo .gt_footnotes {
+#kalgruyugx .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1915,7 +1918,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#jtfvowuezo .gt_footnote {
+#kalgruyugx .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1924,7 +1927,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#jtfvowuezo .gt_sourcenotes {
+#kalgruyugx .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1938,7 +1941,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#jtfvowuezo .gt_sourcenote {
+#kalgruyugx .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1946,63 +1949,63 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#jtfvowuezo .gt_left {
+#kalgruyugx .gt_left {
   text-align: left;
 }
 
-#jtfvowuezo .gt_center {
+#kalgruyugx .gt_center {
   text-align: center;
 }
 
-#jtfvowuezo .gt_right {
+#kalgruyugx .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#jtfvowuezo .gt_font_normal {
+#kalgruyugx .gt_font_normal {
   font-weight: normal;
 }
 
-#jtfvowuezo .gt_font_bold {
+#kalgruyugx .gt_font_bold {
   font-weight: bold;
 }
 
-#jtfvowuezo .gt_font_italic {
+#kalgruyugx .gt_font_italic {
   font-style: italic;
 }
 
-#jtfvowuezo .gt_super {
+#kalgruyugx .gt_super {
   font-size: 65%;
 }
 
-#jtfvowuezo .gt_footnote_marks {
+#kalgruyugx .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#jtfvowuezo .gt_asterisk {
+#kalgruyugx .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#jtfvowuezo .gt_indent_1 {
+#kalgruyugx .gt_indent_1 {
   text-indent: 5px;
 }
 
-#jtfvowuezo .gt_indent_2 {
+#kalgruyugx .gt_indent_2 {
   text-indent: 10px;
 }
 
-#jtfvowuezo .gt_indent_3 {
+#kalgruyugx .gt_indent_3 {
   text-indent: 15px;
 }
 
-#jtfvowuezo .gt_indent_4 {
+#kalgruyugx .gt_indent_4 {
   text-indent: 20px;
 }
 
-#jtfvowuezo .gt_indent_5 {
+#kalgruyugx .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -2074,10 +2077,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>Surprise, Surprise once again Dak Prescott outclasses his competition. In all seriousness Dak Prescott not only was the most accurate QB in 2023, but he also kept the ball out of harm’s way better than anyone close to the same amount of passing attempts. In comparison, the MVP had the worst BT% and OnTgt% of all the candidates.</p>
-<p>While basic stats, air yards, YAC, and advanced accuracy are great starting points there is a better way to evaluate QB thanks to the modern, analytics-based league. For this we use the holy stat of NFL debate EPA/play.</p>
-<p>EPA/play or expected points added per play is an advanced stat that evaluates a player’s down-to-down efficiency while factoring down, distance, and situation. This is calculated by taking the difference between expected points before the play and expected points after it’s over.</p>
-<p>This is important for the MVP race because EPA/play has been crucial to predicting the MVP. The last time a QB won the MVP award and was not the league leader in EPA/play was in 2015 when Cam Newton won it for the Panthers.</p>
+<p>Accuracy is not just a player’s completion percentage. There a plenty of outside factors that can worsen a QBs completion percentage that are uncontrollable like drops, throwaways, and spikes. Stats like bad throw percentage(BT%) and on-target throw percentage(OnTgt%) can show you true accuracy taking uncontrolables into account.</p>
+<p>Surprise, Surprise once again Dak Prescott outclasses his competition. In all seriousness Dak Prescott not only was the most accurate QB in 2023, but he also kept the ball out of harm’s way better than anyone else ranking second in BT% and first in OnTgt% for the 2023 season. Josh Allen was the only comparable candidate in these stats ranking 7th in BT% and 10th in OnTgt%.</p>
+<p>In comparison, the MVP had the worst BT% and OnTgt% of all the candidates. Jackson ranked outside the top 20 in both of these categories. Purdy wasn’t much better than Jackson here ranking 21st in BT% and 17th in OnTgt% for 2023.</p>
+<p>While basic stats, air yards, YAC, and advanced accuracy are great starting points there is a better way to evaluate QB thanks to the modern, analytics-based league. For this, we use the holy stat of NFL debate EPA/play.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -2123,6 +2126,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>EPA/play or expected points added per play is an advanced stat that evaluates a player’s down-to-down efficiency while factoring down, distance, and situation. This is calculated by taking the difference between expected points before the play and expected points after it’s over.</p>
+<p>This is important for the MVP race because EPA/play has been crucial to predicting the MVP. The last time a QB won the MVP award and was not the league leader in EPA/play was in 2015 when Cam Newton won it for the Panthers.</p>
 <p>In 2023, the EPA/play leader on the season was Brock Purdy, followed by Dak Prescott in 2nd, and Josh Allen in 3rd. If they rounded off the top 3 Lamar had to be 4th right? Wrong, Jackson came in at 8th behind Kirk Cousins(6th) and Jalen Hurts(7th).</p>
 <p>Over the course of the entire season, Lamar Jackson was not even the most efficient player at his position let alone in the entire NFL. According to EPA/play it seems like Jackson’s MVP campaign was built on a blowout win against the 49ers in week 16 where he was slightly above average and the demolition against the Dolphins the next week where he was otherworldly.</p>
 <p>While EPA/play by itself is a great measure when you combine it with others it paints an even clearer picture. When paired together EPA/play and completion percentage over expected(CPOE) can show you a quarterback’s down-to-down efficiency and accuracy.</p>
@@ -2177,6 +2182,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>Success rate is also a great stat to measure a player’s consistency. Success rate is defined as the percentage of plays where EPA is greater than 0. In other words, did the QB keep the offense moving and create productive plays.</p>
 <p>Looking at the entire NFL it’s obvious that these four QBs were the right candidates for MVP. All four of them rank 1-4 in Success Rate. Where they separate themselves is efficiency and accuracy. Purdy blew every other QB out of the water. Prescott separated himself from 3rd and Purdy was still way ahead of him.</p>
 <p>Jackson still ranked inside the top 7 in terms of EPA/play and CPOE, but he was worse than the other three candidates. While that is very good, even great it is not MVP level.</p>
 
