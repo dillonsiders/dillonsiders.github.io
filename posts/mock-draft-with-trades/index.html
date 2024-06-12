@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.552">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dillon Siders">
+<meta name="dcterms.date" content="2024-06-12">
+
+<title>Dillon Siders Sports Data Site - Mock Draft with Trades</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Dillon Siders Sports Data Site</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com"> <i class="bi bi-twitter" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Mock Draft with Trades</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Dillon Siders </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">June 12, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<p>Draft night is only 2 weeks away. As the draft hastily approaches fans and scouts alike are patiently awaiting which players end up on their teams. All the commotion has flooded the internet with loads of draft content from lots of different creators. To make this mock a little more unique I decided to include some trades.</p>
+<p>Making a mock draft with trades can be difficult because you do not know what teams value more than others. Because of this I decided to make most of the trades centered around draft capital instead of players. I did include one player deal because I think the move makes a lot of sense for both teams. Finally I wanted to make the trades fun, somewhat realistic, and prospect focused. With that said lets get into the mock.</p>
+<p>No.1 Atlanta Hawks: Alex Sarr</p>
+<p>Alex Sarr is the right pick at No.1 no matter what is in the plans for Atlanta’s future. If Trae Young and Dejounte Murray are still there in the fall Sarr looks to be the perfect mobile, rim-protecting, lob threat to fit next to them. If they move on from those two Sarr is put in the position to have the freedom to experiment and develop his offensive game and become a 2-way star.</p>
+<p>No.2 Washington Wizards: Donovan Clingan</p>
+<p>While Zaccharie Riasher is the favorite to be selected after Alex Sarr I have the Wizards taking a different route. Trading Daniel Gafford at the deadline last season left the Wizards frontcourt without a rim protector. Adding Donovan Clingan fills that hole with the potential to be much more. Pairing Clingan’s rim protection with Bilai Coulibaly and Deni Avdija could turn into one of the better defensive frontcourts in a few years.</p>
+<p>No.3 Detroit Pistons: Zaccharie Risacher</p>
+<p>The first trade that I have in this mock is the Pistons pouncing on Zaccharie Risacher’s slight fall. Detroit is in desperate need of some floor spacing next to rising star Cade Cunningham and Risasher provides just that. He also has some interesting defensive potential both on and off the ball. Risacher gives Detroit the archetype of player they are looking for with the potential to become more in the future.</p>
+<p>No.4 San Antonio Spurs: Stephon Castle</p>
+<p>At 4 I have the Spurs taking UConn combo guard Stephon Castle. During the draft process, Castle and his camp have made it known that he wants a chance to play point guard in the NBA. Landing in San Antonio gives Castle that chance since Tre Jones is the current starter. Even if Castle ends up not being able to play the point he can slide over to the wing and fill a similar role to the one he played this year at UConn. Whether on or off ball Castle will bring great playmaking and defense to complement rising star Victor Wembanyama.</p>
+<p>No.5 Houston Rockets: Rob Dillingham</p>
+<p>After trading back to 5 and adding some future assets the Rockets add some depth in their backcourt with Rob Dillingham. The small, skinny, and shifty guard brings the Rockets a punch of shot creation, shooting, and playmaking they need off the bench. Early on Dillingham can play a similar role to the one he played at Kentucky as a bench microwave scorer and playmaker. If all goes well Dillingham will take over for Fred VanVleet after his contract is up in 2 years and form a dynamic backcourt with Jalen Green.</p>
+<p>No.6 Charlotte Hornets: Reed Sheppard</p>
+<p>Reed Sheppard landing in Charlotte pairs one of my favorite players in the draft with one of their better fits. I think going to a situation where he can play next to other on-ball creators like Lamelo Ball and Brandon Miller will let Sheppard make a smooth transition to the league. Reed profiles as the perfect complementary guard with elite shooting numbers and secondary playmaking skills. Playing next to Lamelo will let Sheppard fully commit to this role while he continues to develop shot-creation skills.</p>
+<p>No.7 Portland Trail Blazers: Ron Holland</p>
+<p>So far during their rebuild Portland has already added the player they hope to be the face of their franchise in Scoot Henderson. At 7 they can go a lot of different directions but I have them swinging on Ignite wing Ron Holland. Portland already has a few interesting young wings but none of them offer the same offensive upside Holland can. Even though Holland can’t space the floor yet, his athleticism lets him feast in transition and as a driver. His athleticism also transfers to the defensive end where he makes some jaw-dropping plays. His all-around consistency needs to improve, but Holland will have plenty of time and opportunity to grow while the Trail Blazers work through the rebuild.</p>
+<p>No.8 San Antonio Spurs: Devin Carter</p>
+<p>The Spurs are back on the clock and they add more stability to their backcourt with Providence guard Devin Carter. I know what some might be thinking, you took Stephon Castle at 4 to be the point guard why take Carter now? First, NBA positions are becoming less and less important. Look at the finals, neither team has a traditional point guard that runs all the offense. A Castle and Carter backcourt would allow both to split ball-handling duties while focusing on the complementary skills that make them great players. Also, the Spurs already have Victor Wembanyama and Devin Vassell who both should see the majority of touches. Second, in the scenario, the Castle can’t play point guard you can slide him over to the wing and let Carter play there. No matter what position Carter brings hard-nosed point-of-attack defense, secondary playmaking, and improved outside shooting that perfectly complements the rising stars on the roster.</p>
+<p>No.9 Oklahoma City Thunder: Dalton Knecht</p>
+<p>The second trade of this mock involves the Thunder opening up the vault and spending some of their draft capital to get Dalton Knecht. The Tennesee wing is an absolute flamethrowing from deep. Outside of his shooting, Knecht provides a 3-level scoring impact with some impressive shot-making skills. Knecht still has questions on defense, but he showed great effort and made improvements throughout the season. In these playoffs we saw the impact an elite shooter like Isaiah Joe made, eventually getting him a starting role. I think that Knecht can bring the same value as Isaiah Joe with the upside to become a lot more thanks to his better size and strength. Joe is likely in for a massive payday and if the Thunder choose to let him walk Knecht could be the perfect replacement.</p>
+<p>No.10 Utah Jazz: Cody Williams</p>
+<p>Collin Sexton and Keyonte George emerged as bright spots on this young Jazz roster next to Lauri Marrkkanen, but they did not get much production from their wings. To fix that they select Cody Williams from Colorado. Williams had an up-and-down season riddled by injuries but when he was healthy he flashed tremendous upside. He exhibited great finishing and defensive versatility that can be taken to the next level when his frame fills out. He also flashed potential as a shooter making over 40% of his threes, but only on 41 total attempts. If Williams can tighten his handle, shot a respectable percentage from three, and fill out his frame he’ll be one of the more valuable two-way wings in the NBA. Even if he doesn’t hit his ceiling Williams can provide play finishing, rim pressure, and defense next to their other core players.</p>
+<p>No.11 Chicago Bulls: Matas Buzelis</p>
+<p>Chicago brings Matas Buzelis back to his hometown where he can hopefully turn help turn the Bulls around. Having been stuck in mediocrity for the past few seasons Chicago needs to choose a direction. Drafting Buzelis can help them make that decision since he will need some time before positively contribuiting to a team. Buzelis has a intriguing upside tied to his athleticism, height, and handle. Even with those Buzelis still has questions mostly around his scoring and playmaking. He showed flashes on these areas, but without consistent ways to score or set others up Buzelis could struggle to find a defined role. Selecting Buzelis should be paired with moving on from older players like DeMar DeRozan to bring in as much draft capital as possible to kick off a rebuild.</p>
+<p>No.12 Memphis Grizzlies: Tristan Da Silva</p>
+<p>Trading down with the Thunder results in the Grizzlies selecting the other Colorado wing Tristan Da Silva. Memphis has long been looking for a bigger wing to fit next to Ja Morant, Desmond Bane, and Jaren Jackson. While Da Silva isn’t the classic 3-and-D roll player type he is a dribble-pass-shooter player. That overall offensive versatility lets him play multiple roles and fit next to lots of different players. Even though Da Silva isn’t a lockdown defender he won’t actively hurt your defense either.</p>
+<p>No.13 Washington Wizards: Nikola Topic</p>
+<p>Washington ends the slide of Nikola Topic by trading up with the Sacramento Kings. This deal involves Kyle Kuzma being sent to Sacramento for the 13th pick, salary filler, and maybe another pick. In recent weeks it has been revealed that Topic suffered a partially torn ACL. Here we play out the scenario that this results in him falling to the later lottery. With proper management and rest I do not expect this injury to be a major issue. Washington has been lacking a true playmaking lead guard that can give their offense some much-needed stability. Pairing Topic with the No.2 overall pick Donovan Clingan is a match made in heaven. Topic and Clingan have the potential to be a deadly pick-and-roll duo on offense, and Clingan’s rim protection can erase some of the mistakes Topic will inevitably make on the perimeter.</p>
+<p>No.14 Orlando Magic: Bub Carrington</p>
+<p>Trade number 3 has the Magic trading up to take guard Bub Carrington. Orlando has lacked offensive production from this backcourt and drafting Carrington is an attempt to fix that. Carrington likely won’t contribute in year 1, but with a little development, they could acquire a deadly offensive weapon. The intrigue in Carrington comes from his shot creation and playmaking abilities as one of the youngest players in the class. His three-point numbers do not look the greatest, but they do not paint the entire picture. Carrington’s shot diet was heavily based on off-the-dribble jump shots from both 3 and mid-range. In the mid-range, he shot 50% on over 125 total attempts gives me hope in him pushing that out to 3 eventually. A fully evolved Carrington would have the versatility to space the floor for Paolo Banchero and Franz Wagner or set both of them up with his passing.</p>
+<p>No.15 Miami Heat: Isaiah Collier</p>
+<p>At 15 I have the Miami Heat planning for their future by taking high upside point guard Isaiah Collier. While at USC Collier flashed his amazing potential as a lead initiator and downhill driver, but ultimately had some inconsistencies that NBA teams might be worried about. Collier currently does not pose much of a threat as a jump shooter from either mid-range of three and had some turnover problems early in the season. Collier is the front runner to be the Tyrese Mexey of this class in the sense that he could slide out of the lottery on draft night. A team like Miami who has a solidified core, but still lacks offensive firepower can invest in his advantage creation and wiat a couple years for him to hit his stride.</p>
+<p>No.16 Philadelphia 76ers: Tyler Smith</p>
+<p>Philadelphia left themselves with a lot of work this offseason. Tons of their roster is set to enter free agency they can take this pick in any direction. I decided to swing for upside while finding someone that can fit next to stars like Joel Embiid and Tyrese Maxey. The fully realized version of Tyler Smith fits that role perfectly. Smith is a 6’10 stretch 4 with tons of athletic ability. His floor spacing is perfect for giving Embiid and Maxey room to operate on offense.</p>
+<p>No.17 Los Angeles Lakers: Jared McCain</p>
+<p>One thing a team like the Lakers can’t get enough of is shooting. Adding Jared McCain gives them a great shooter with lots of room to grow on offense. Along with his shooting McCain showed solid skills as a passer, but he struggled to generator rim pressure consistently. He also lacks traditional size for a off guard some development of on-ball skills will be key. On defense McCain has some questions mainly pretaining to his size and athleticism. Finally McCain gives the Lakers flexibility to move on from D’Angelo Russell this offseason if they feel like it.</p>
+<p>No.18 Portland Trail Blazers: Tidjane Salaun</p>
+<p>Trading down with Orlando was a great move for a team like Portland that wants to emass tons of draft capital. Even with the move down Portland can still select a player I believe would be in play for them at 14, that being Tidjane Salaun. Salaun has been one of the most polarizing prospects in this class. NBA teams have apparently been enamored with Salaun. Salaun still a major project and is likely a few years away from contributing positively. Luckily Portland has the time and patience to wait on this. At his ceiling Salaun can provide a Michael Porter Jr type impact, but at his floor Salaun likely wouldn’t consistently be in a NBA rotation.</p>
+<p>No.19 Toronto Raptors: Ja’Kobe Walter</p>
+<p>The Raptors are set to make their first pick at 19th after their own first dropped to 8 and conveyed to San Antonio. Even without a top 10 pick the Raptors take someone who was projected to go there at the start of the cycle Ja’Kobe Walter. Walter slipped some in the draft after he wasn’t the 2-way player many thought he would be at Baylor. In the past Toronto has loved to take lengthy and theoretically versatile players and Walter fits that to a tee. His biggest basketball strength is his shooting which should fit perfect next to Scottie Barnes and Immanuel Quickley. Walter gives Toronto a do over on finding the perfect complementary shooter.</p>
+<p>No.20 Cleveland Cavaliers: Jaylon Tyson</p>
+<p>Cleveland could make major waves that shake up the draft and the entire offseason. After losing to the Celtics there have been questions on Jarrett Allen and Darius Garland and their future with the team. If I had to guess who gets moved I’d go with Allen, but I won’t be doing that in this mock. Instead I just have them taking Jaylon Tyson. The Cavs have long been looking for consistent wing play next to their four core players. Tyson gives a extra boost in almost every facet of offense. He also showed good ability as a ball handler that only Caris Levert rivals in the wing room.</p>
+<p>No.21 New Orleans Pelicans: Daron Holmes</p>
+<p>It is likely that Jonas Valanciunas has played his last game for the Pelicans. After getting swept by the Thunder it was rumored that the Pelicans could look to make some major roster changes. Getting a big man like Daron Holmes who has the potential to space the floor would open up lanes for Zion Williamson. Outside of shooting, Holmes is best used as a play finisher and rim protector. What most do not see is some of the untapped things with Holmes. With Dayton he showed flashes of face-up offense, some handle, and playmaking. If New Orleans can tap into these, Holmes could become the perfect big next to Zion</p>
+<p>No.22 Phoenix Suns: Yves Missi</p>
+<p>I fully expect whoever the Suns take to be traded if the pick isn’t trade before draft night. I ended up selecting Yves Missi because he has some of the same traits as a Dereck Lively type big. We have seen in the playoffs how valuable Lively’s skillset has been for Dallas. While I do not think Missi is as refined as Lively was he possesses similar athletic traits. Missi doesn’t have the same upside since he doesn’t process the game as good as Lively, but if you told me they ended up playing similar roles in the NBA I wouldn’t be shocked.</p>
+<p>No.23 Milwaukee Bucks: Tyler Kolek</p>
+<p>Milwaukee had a disappointing playoffs, mostly to do with Giannis and Damian Lillard being injured. Outside of Lillard the Bucks lacked a real point guard to keep things calm. Drafting Tyler Kolek can give the Bucks the back up point guard and bench shooting they desperatly need. I can see Kolek being a contributor frm day one as the backup floor general similar to a Tj McConnell or Tyus Jones.</p>
+<p>No.24 New York Knicks: Zach Edey</p>
+<p>New York has two picks back to back. It is very likely that one of those is traded and moved into the future. I have them sticking and picking at 24 with the selection being Zach Edey. This offseason New York has two heavily coveted free agents, those being OG Anunoby and Isaiah Hartenstein. They should be able to bring both back but in the scenario they can only sign one I’d expect them to proiritize Anunoby. While Edey doesn’t fit Hartenstein’s role perfectly he can come in fill some of it. On offense his biggest use is as a screen setter and roll finisher which works great with Jalen Brunson. On defense he can play deep drop and protect the rim while New Yorks perimeter defenders funnel ball handlers into him.</p>
+<p>No.25 Utah Jazz: Kyshawn George</p>
+<p>The second to last trade in this mock involves the Jazz moving future picks to jump the Wizards. Here they add a offensively skilled wing out of Miami, Kyshawn George. George is one of those late growth spur wings who kept their guard skills. I like his handle and shooting for this size, but ahtletic concerns keep me from moving George much higher. Despite being 6’8 George doesn’t put tons of pressure on the rim because of his poor acceleration. He made up for this with flashes of incredible shot making off the catch and dribble.</p>
+<p>No.26 Washington Wizards: Kyle Filipowski</p>
+<p>Someone that ended up falling is Duke big Kyle Filipowski. I’m lower on him then consensus, but even I would take him higher than this. I think that he brings some good things like his passing and all around perimeter skills for a big man, but without a defensive calling card its hard to project his impact. Filipowski’s wingspan, standing reach, and vertical athleticism are all poor indicators for defensive impact as a rim protector. Where I do think he can make some noise on defense is his switchability. While I wouldn’t call him an ideal switch big he showed major improvments in his lateral mobility from freshman to sophomore year. Earlier I touched on how empty the Wizards big man room is so doubling down on a big who provides different things from Clingan can help Washington’s overall versatility.</p>
+<p>No.27 Minnesota Timberwolves: Baylor Scheierman</p>
+<p>While I’m sure Timberwolves fans are still sad about the loss in the Western Conference Finals this season was an astounding success. Anthony Edwards has emerged as a certified superstar and Minnesota’s defense was best in the league all year. Now I think their next step is finding more role players that fit next to Edwards. Baylor Scheierman should be able to come in showcase his dribble-pass-shoot skillset playing off Minnesota’s stars. Outside of Jaden McDaniels Minnesota lacks real wing depth and shooting which Scheierman provides.</p>
+<p>No.28 Denver Nuggets: Kevin McCullar</p>
+<p>Denver fell short in there quest to repeat and some of their weaknesses were exposed by the Timberwolves. Pick at 28 likely solve any of those issues, but they can continue to add talented role players to replenish ones that secure paydays. I have them selecting Kanas wing Kevin McCullar to be a do it all wing who focuses on defense. Offense was the main question surround him, but he made big strides on that front this year. The jump shot is still inconsistent, but his connective playmaking and off-ball IQ should let him make an impact outside of his defense.</p>
+<p>No.29 Brooklyn Nets: Ajay Mitchell</p>
+<p>With the rise to stardom Jalen Brunson has seen many are trying to find the next Jalen Brunson. While I doubt he gets to that level the player in this class who reminds me the most of Brunson is Ajay Mitchell. He displayed great poise as a driver and used fun, creative footwork to get to his spots. This year Mitchell showcased true 3-level scoring ability, but this was the first year he shot the 3 relativly well. I had the Nets trading into the first to take Mitchell, mostly because I wanted to make a pick for the Nets. Currently the guard rotation in Brooklyn is devoid of much talent, and I think Mitchell can make a impact for them sooner rather than later.</p>
+<p>No.30 Boston Celtics: Kel’el Ware</p>
+<p>My though process behind taking Kel’el Ware for the Celtics has been their team building philosophy. We have seen them embrace the three ball and a 5-out style of play. For this play style floor spacing bigs like Kristaps Porzingis and Al Horford a key to success. Ware has the potential to be this type of big man. With Horford’s age only increasing it would be smart of the Celtics to try and replace him in some way. Ware also has great defensive potential based on his athleticism and frame. It is likely that Ware will need a season or two to get a better understanding of the technical sides of basketball. If Ware is able to reach his ceiling it will being tremendous value for the Celtics and make every other franchise even more fearful of them.</p>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
