@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Dillon Siders">
+<meta name="dcterms.date" content="2024-06-17">
 
-<title>Dillon Siders Sports Data Site - Latest posts</title>
+<title>Dillon Siders Sports Data Site - The Draft of Role Players and False Ceilings</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,77 +68,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Dillon Siders Sports Data Site</span>
     </a>
   </div>
@@ -149,7 +91,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -172,261 +114,67 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Latest posts</h1>
+    <div class="quarto-title column-body">
+      <h1 class="title">The Draft of Role Players and False Ceilings</h1>
                       </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Dillon Siders </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">June 17, 2024</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(7)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<p>Much has been made about the talent pool in the 2024 NBA Draft. Most of the discourse comes from the so-called “lack” of talent at the top of the class. While I can agree that this draft lacks a certified superstar in the making that does not mean that the class is completely devoid of talent. Even without a future superstar, this class looks to be stuffed with players who can grow into high-end role players that any championship team would want.</p>
+<p>Finding role players that fit around your team’s star players has become more and more important for putting a winning product on the court. Offenses and defenses are becoming more advanced which makes the schematic fit between players a larger priority for organizations, especially ones in the position to compete for championships. With uncertainty surrounding some of the younger, higher-potential players it might be beneficial for teams to take an older more NBA-ready who can fill a specific role immediately. This risk of potential versus consistency has long been a topic of debate among draft evaluators.</p>
+<p>Age has long been associated with a prospect’s upside. It makes some sense as a younger player with the same level of talent as a slightly older one has more time to improve and surpass them. This type of thinking caused players like Jalen Williams, Desmond Bane, and Jalen Brunson to slip down the boards and return major value. While those players have some outlier development we have seen many college players with three-plus years of experience become valuable contributors to great teams.</p>
+<p>This is where the term false ceiling comes in. False ceiling, a term I first heard from the draft evaluators at No Ceilings, is when a player is assumed to have a capped level they are close to hitting when in reality they have plenty of ways to improve and take their games to a level not many expected. In the 2024 Draft, I believe that Dalton Knecht, Devin Carter, and Tristan da Silva could be the next players to meet this criteria. Depending on the situation these players land in they could reach heights many do not see for them.</p>
+<p>Dalton Knecht</p>
+<p>After transferring from Northern Colorado to Tennessee Dalton Knecht quickly became one of the best players in college basketball. This year Knecht did almost everything for the Vols on offense. His greatest strength has always been his outside shot and the shooting versatility that comes with it. Knecht was best when used as an off-ball spot-up and movement shooter. Tennessee ran him off of tons of screens and dribble handoffs from all over the court.</p>
+<p>Knecht isn’t just a shooter as he possesses true 3-level scoring ability being able to finish at the rim and make mid-range jumpers. He was great at curling off screens for mid-range jumpers or to get all the way to the rim. Knecht also displayed a good enough handle to pressure the rim. Once he got there Knecht’s vertical pop and strength allowed him to finish above or through defenders.</p>
+<p>Knecht’s false ceiling comes from my belief in his untapped potential as a pull-up scorer and his physical tools. Since Knecht was forced to handle most of the offensive load for Tennessee he was able to showcase some intriguing flashes as a creator. He won’t be asked to handle that level of offensive responsibility at the start of his career. The pull-up jumper is still inconsistent, but he flashed incredible range and shot-making from all areas and with time could become a deadly pull-up jump shooter.</p>
+<p>The other part contributing to Knecht’s false ceiling is his natural athleticism. Not many prospects have the combination of shooting and athleticism that Knecht does. He’s an above-average vertical athlete and posted some great agility/speed numbers at the combine. These same movement skills and vertical pop were noticeable in Knecht’s transition play and when he attacked the rim. With a little refinement, he could become a dangerous downhill driver who leverages his shooting prowess to pressure the rim.</p>
+<p>His natural athleticism also gives me hope for an increased defensive impact in the NBA. Knecht chose to transfer to Tennessee so that he could improve on his defense and that is just what he did this year. Although he wasn’t a lockdown defender I have faith that he will continue to progress on that end. Speed, strength, agility, and effort are all positive indicators that Knecht can eventually become a good defender.</p>
+<p>Devin Carter</p>
+<p>No prospect left me with fewer questions than Devin Carter. The Providence guard had a massive breakout this year resulting in his draft stock skyrocketing. While I love every aspect of Carter’s game, the defensive side of the ball is where he has made his biggest impact. Even though Carter stands at an uninspiring 6’3 he has a similar level of tenacity and physicality that other guards like Marcus Smart have hung their hats on. He is a hounding point-of-attack defender who has the physical tools and technique to lockdown opposing ball handlers.</p>
+<p>One of the main reasons Carter saw his draft stock soar was his increased offensive production. After Bryce Hopkins went down with an unfortunate injury Carter saw his on-ball responsibilities increase. He took this change of role in stride and thrived. He showed a good feel as a pick-and-roll ball handler being able to score or distribute to others. As a driver, he used strength and crafty footwork to get looks at the rim where he finished 65% of his shots.</p>
+<p>Where Carter made the biggest strides as an offensive player was as a shooter. In Carter’s freshman and sophomore seasons, he only shot 29% from 3 on 174 total attempts. In his junior year alone he shot 37% from 3 on 223 attempts. These mixed results have left scouts divided on Carter’s projection as a shooter. I am a believer in his shot because of the amount of attempts this year and the difficulty of those attempts. This year he showed tons of confidence as an outside shooter taking 11.2 3’s per 100 possessions. This amount of volume paired with the range of some of his shots and the self-creation/pull-up flashes makes me confident in Carter’s shooting.</p>
+<p>Carter’s false ceiling lies in his potential to eventually be a lead guard and his athleticism. There isn’t a single area where Carter isn’t a plus athlete. He broke the combine record for ¾ court sprint at 2.87 seconds and tied for the highest vertical at 42 inches. Carter also showcased his elite agility and lateral movement skills. His athleticism is clear on the film whether he’s pushing the pace on a fastbreak, catching a lob dunk, or sliding his feet and chesting up defenders.</p>
+<p>The other part of Carter’s game that makes me believe he is a false-ceiling prospect is his potential to be a lead guard. Some evaluators have strictly classified Carter as a shooting guard, but I think that puts a cap on who he could become. Carter did not post any astonishing assist to turnover numbers, but I think he shows the patience and vision to grow into a lead guard. He probably won’t be asked to be that early on, but with time Carter could provide a similar impact as a Jrue Holiday or Derrick White.</p>
+<p>Tristan da Silva</p>
+<p>The final player that I believe has untapped and unnoticed upside is Colorado’s Tristan da Silva. This year for Colorado da Silva did a little bit of everything. He was their second-leading scorer and similarly to Knecht showcased scoring from all 3 levels. While he doesn’t have the same shooting prowess or range as Knecht he is currently better in the intermediate ranges. What impressed me most was his touch around the rim and in the mid-range. He shot 61% at the rim which is alright, but he shot 49% on non rim 2’s. He was great at pulling up in the mid-range or using his size and touch on push shots in the 7-12 feet range.</p>
+<p>Even though da Silva isn’t the same shooter as Knecht, doesn’t mean he’s not a good floor spacer. I do not think he has the same movement versatility, but da Silva still shot 39% on 162 3-point attempts. This all-around scoring makes da Silva a threat from anywhere on the court and defenses know that. This allows him to use his above-average handle for a 6’9 player and connective passing to get others involved. Lots of teams are looking for dribble-pass-shoot wings, especially ones with above-average height like da Silva.</p>
+<p>The main reasons I see untapped upside in da Silva are offensive versatility, ball handling, and touch all packed into his 6’9 frame. Like I said earlier every team is looking for large wings with the offensive skill da Silva possesses. His overall versatility should get him on the court right away since he can seamlessly fit into multiple roles. Once da Silva enters the rotation his scoring versatility, handle, and connective passing could let him develop into one of the most coveted young wings in the NBA.</p>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="" data-listing-date-sort="1718600400000" data-listing-file-modified-sort="1718643421964" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1511">
-<div class="thumbnail">
-<p><a href="./posts/role-players-and-false-ceilings/index.html" class="no-external"></a></p><a href="./posts/role-players-and-false-ceilings/index.html" class="no-external">
-<p><img src="./posts/role-players-and-false-ceilings/image.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/role-players-and-false-ceilings/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/role-players-and-false-ceilings/index.html" class="no-external">The Draft of Role Players and False Ceilings</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/role-players-and-false-ceilings/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-
-</div>
-<div class="listing-description">
-<a href="./posts/role-players-and-false-ceilings/index.html" class="no-external">Much has been made about the talent pool in the 2024 NBA Draft. Most of the discourse comes from the so-called “lack” of talent at the top of the class. While I can agree…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/role-players-and-false-ceilings/index.html" class="no-external">
-<div class="listing-date">
-Jun 17, 2024
-</div>
-<div class="listing-author">
-Dillon Siders
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="" data-listing-date-sort="1718341200000" data-listing-file-modified-sort="1718392209749" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1246">
-<div class="thumbnail">
-<p><a href="./posts/stephon-castle-player-profile/index.html" class="no-external"></a></p><a href="./posts/stephon-castle-player-profile/index.html" class="no-external">
-<p><img src="./posts/stephon-castle-player-profile/image.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/stephon-castle-player-profile/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/stephon-castle-player-profile/index.html" class="no-external">Point Guard or Two-Way Wing? 2024 NBA Prospect Profile: Stephon Castle</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/stephon-castle-player-profile/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-
-</div>
-<div class="listing-description">
-<a href="./posts/stephon-castle-player-profile/index.html" class="no-external">Going into this college basketball season UConn was looking to become the eighth team to consecutive national championships. Behind the returning core of Donovan Clingan…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/stephon-castle-player-profile/index.html" class="no-external">
-<div class="listing-date">
-Jun 14, 2024
-</div>
-<div class="listing-author">
-Dillon Siders
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="" data-listing-date-sort="1718168400000" data-listing-file-modified-sort="1718643377169" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="18" data-listing-word-count-sort="3548">
-<div class="thumbnail">
-<p><a href="./posts/mock-draft-with-trades/index.html" class="no-external"></a></p><a href="./posts/mock-draft-with-trades/index.html" class="no-external">
-<p><img src="./posts/mock-draft-with-trades/image.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/mock-draft-with-trades/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/mock-draft-with-trades/index.html" class="no-external">Mock Draft with Trades</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/mock-draft-with-trades/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-
-</div>
-<div class="listing-description">
-<a href="./posts/mock-draft-with-trades/index.html" class="no-external">Draft night is only 2 weeks away. As the draft hastily approaches fans and scouts alike are patiently awaiting which players end up on their teams. All the commotion has…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/mock-draft-with-trades/index.html" class="no-external">
-<div class="listing-date">
-Jun 12, 2024
-</div>
-<div class="listing-author">
-Dillon Siders
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="" data-listing-date-sort="1717995600000" data-listing-file-modified-sort="1718392098981" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1136">
-<div class="thumbnail">
-<p><a href="./posts/nikola-topic-prospect-profile/index.html" class="no-external"></a></p><a href="./posts/nikola-topic-prospect-profile/index.html" class="no-external">
-<p><img src="./posts/nikola-topic-prospect-profile/image.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/nikola-topic-prospect-profile/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/nikola-topic-prospect-profile/index.html" class="no-external">2024 NBA Draft Prospect Profile: Nikola Topic</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/nikola-topic-prospect-profile/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-
-</div>
-<div class="listing-description">
-<a href="./posts/nikola-topic-prospect-profile/index.html" class="no-external">In recent years we have seen an influx of foreign talent enter the NBA. Some of the best players in the league like Giannis Antetekounmpo, Joel Embiid, and Luka Doncic hail…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/nikola-topic-prospect-profile/index.html" class="no-external">
-<div class="listing-date">
-Jun 10, 2024
-</div>
-<div class="listing-author">
-Dillon Siders
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="" data-listing-date-sort="1716872400000" data-listing-file-modified-sort="1718034790655" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1334">
-<div class="thumbnail">
-<p><a href="./posts/tidjane-salaun-prospect-breakdown/index.html" class="no-external"></a></p><a href="./posts/tidjane-salaun-prospect-breakdown/index.html" class="no-external">
-<p><img src="./posts/tidjane-salaun-prospect-breakdown/image.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/tidjane-salaun-prospect-breakdown/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/tidjane-salaun-prospect-breakdown/index.html" class="no-external">2024 NBA Draft Prospect Profile: Tidjane Salaun</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/tidjane-salaun-prospect-breakdown/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-
-</div>
-<div class="listing-description">
-<a href="./posts/tidjane-salaun-prospect-breakdown/index.html" class="no-external">The 2024 NBA Draft is one of mystery and uncertainty. Throughout this draft cycle, evaluators have gone back and forth on almost every single player. While one outlet has a…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/tidjane-salaun-prospect-breakdown/index.html" class="no-external">
-<div class="listing-date">
-May 28, 2024
-</div>
-<div class="listing-author">
-Dillon Siders
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="" data-listing-date-sort="1714885200000" data-listing-file-modified-sort="1716213779448" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1697">
-<div class="thumbnail">
-<p><a href="./posts/thunder-true-title-contenders/index.html" class="no-external"></a></p><a href="./posts/thunder-true-title-contenders/index.html" class="no-external">
-<p><img src="./posts/thunder-true-title-contenders/image.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/thunder-true-title-contenders/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/thunder-true-title-contenders/index.html" class="no-external">Despite the youth and inexperience the Oklahoma City Thunder fielded one of the top teams in the NBA this year and established themselves as true title contenders in the wild Western Conference.</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/thunder-true-title-contenders/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-
-</div>
-<div class="listing-description">
-<a href="./posts/thunder-true-title-contenders/index.html" class="no-external">This year in the NBA we were treated to one of the most competitive Western Conferences ever. By the time all the postseason teams (playoff and play-in) were set every team…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/thunder-true-title-contenders/index.html" class="no-external">
-<div class="listing-date">
-May 5, 2024
-</div>
-<div class="listing-author">
-Dillon Siders
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="" data-listing-date-sort="1713070800000" data-listing-file-modified-sort="1713121124386" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="20" data-listing-word-count-sort="3940">
-<div class="thumbnail">
-<p><a href="./posts/mvp-race-closer-than-voting-shows/index.html" class="no-external"></a></p><a href="./posts/mvp-race-closer-than-voting-shows/index.html" class="no-external">
-<p><img src="./posts/mvp-race-closer-than-voting-shows/image.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/mvp-race-closer-than-voting-shows/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/mvp-race-closer-than-voting-shows/index.html" class="no-external">In a season where Lamar Jackson secured 49 of the 50 first place MVP votes the numbers show that this race was a lot closer than people think.</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/mvp-race-closer-than-voting-shows/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-
-</div>
-<div class="listing-description">
-<a href="./posts/mvp-race-closer-than-voting-shows/index.html" class="no-external">2023 was an interesting year for NFL offenses and QBs. After years of consistent improvement in QB play this year was different. This down year at the QB position…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/mvp-race-closer-than-voting-shows/index.html" class="no-external">
-<div class="listing-date">
-Apr 14, 2024
-</div>
-<div class="listing-author">
-Dillon Siders
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
